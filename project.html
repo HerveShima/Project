@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TasteBuds Restaurant</title>
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">TasteBuds</h1>
+      <nav>
+        <ul id="navLinks" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reserve">Reservation</a></li>
+          <li><a href="#contact1">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to TasteBuds</h2>
+      <p>Delicious food, warm atmosphere.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+<section id="menu" class="section">
+  <div class="container">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/the-best-homemade-margherita-pizza-1-4-500x375.jpg" alt="Margherita Pizza" class="menu-img" />
+        <h3>
+          <a href="https://www.abeautifulplate.com/the-best-homemade-margherita-pizza/" target="_blank">
+            Margherita Pizza>
+          </a>
+        </h3>
+        <p>Classic delight with fresh basil and mozzarella.</p>
+        <p class="price">$12.99</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/k_Photo_Recipes_2023-06-chicken-alfredo-pasta-reshoot_chicken-alfredo-pasta-2-vertical.jpg" alt="Pasta Alfredo" class="menu-img" />
+        <h3>
+          <a href="https://www.allrecipes.com/recipe/23431/to-die-for-fettuccine-alfredo/" target="_blank">
+            Pasta Alfredo>
+          </a>
+        </h3>
+        <p>Creamy sauce, grilled chicken & parmesan.</p>
+        <p class="price">$14.99</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/pcc-rosemary-grilled-salmon-flo.jpg" alt="Grilled Salmon" class="menu-img" />
+        <h3>
+          <a href="https://www.allrecipes.com/recipe/12720/grilled-salmon-i/" target="_blank">
+            Grilled Salmon>
+          </a>
+        </h3>
+        <p>A simple soy sauce and brown sugar marinade, with hints of lemon and garlic, are the perfect salty-sweet complement to rich salmon fillets.</p>
+        <p class="price">$17.49</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Us</h2>
+      <img src="images/TacosBeerInteriorVibe.png" alt="Our Kitchen" class="about-img" />
+      <p>We’re passionate about creating exceptional culinary experiences. TasteBuds combines a cozy atmosphere with mouthwatering dishes.</p>
+    </div>
+  </section>
+
+<section id="contact" class="section">
+  <div class="container">
+
+    <h3 id="reserve">Make a Reservation</h3>
+    <form id="reservation-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="date" required />
+      <input type="time" required />
+      <button type="submit">Reserve Now</button>
+    </form>
+    <p id="form-message"></p>
+
+    <h2 id="contact1">Contact Us</h2>
+    <p>Email:<a href="emailto:shimaherve235@gmail.com">shimaherve235@gmail.com</a></p>
+    <p>Phone: +250-790000000</p>
+  </div>
+</section>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Herve Shima. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="project.js"></script>
+  
+
+<!-- Chat Button and Box (Bottom Left) -->
+<div id="chatToggle">💬 Chat</div>
+
+<div id="chatBox">
+  <div id="chatHeader">
+    TasteBuds Chat <span id="closeChat">×</span>
+  </div>
+  <div id="chatMessages">
+    <p class="bot">👋 Hello! How can we help you today?</p>
+  </div>
+  <form id="chatForm">
+    <input type="text" id="chatInput" placeholder="Type your message..." required />
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+
+</body>
+</html>
